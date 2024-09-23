@@ -9,6 +9,7 @@ const Books = () => {
     const [books, setBooks] = useState([]);
 
     const apiUrl = import.meta.env.VITE_NODE_API_URL;
+    console.log("SYSTEM_ENV: " + import.meta.env.VITE_SYSTEM_ENV);
     console.log("apiUrl: " + apiUrl);
 
     useEffect(() => {
